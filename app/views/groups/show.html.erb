@@ -14,7 +14,6 @@
         <th>文章内容</th>
         <th>发表者</th>
         <th>发表时间</th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -23,10 +22,6 @@
          <td><%= post.content %></td>
          <td><%= post.user.email %></td>
          <td><%= post.created_at %></td>
-         <td>
-           <%= link_to("Edit", edit_group_post_path(post), class: "btn btn-sm btn-default")%>
-           <%= link_to("Delete", group_posts_path(post), class: "btn btn-sm btn-default")%>
-         </td>
        </tr>
       <% end %>
     </tbody>
